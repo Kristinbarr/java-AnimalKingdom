@@ -23,6 +23,6 @@ public class Bird extends AbstractAnimal {
 
   @Override
   public String toString() {
-    return "\nBird" + "Name: " + name + "\'" + ", Year Named: " + year;
+    return "\nBird " + "Name: " + name + "\'" + ", Year Named: " + year;
   }
 }
