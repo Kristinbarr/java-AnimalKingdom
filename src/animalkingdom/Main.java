@@ -13,6 +13,6 @@ public class Main {
     // Mammal raccoon = new Mammal("Raccoon", 1758);
     // Mammal bigfoot = new Mammal("Bigfoor", 2021);
 
-    System.out.println("PANDA");
+    System.out.println(panda);
   }
 }

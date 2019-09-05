@@ -15,7 +15,8 @@ public abstract class AbstractAnimal {
 
   // Methods will return a string saying how that animal implements the action
 
-  // All animals can move, breath, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
+  // All animals can move, breath, reproduce. How they do that, so what string
+  // should get returned when the method is executed, varies by animal type.
 
   public AbstractAnimal(String name, int year) {
     maxId++;
@@ -29,7 +30,9 @@ public abstract class AbstractAnimal {
   }
 
   public abstract String move();
+
   public abstract String breath();
+
   public abstract String reproduce();
 
   // getter functions

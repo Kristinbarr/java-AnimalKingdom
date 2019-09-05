@@ -2,24 +2,27 @@ package animalkingdom;
 
 public class Bird extends AbstractAnimal {
 
-  private int food; // not sure here
-
-  public Bird(int id, String name, int year) {
-    super(id, name, year, food);
-    this.id = id;
-    this.name = name;
-    this.year = year;
+  public Bird(String name, int year) {
+    super(name, year);
   }
 
+  @Override
   public String move() {
     return "fly";
   }
 
+  @Override
   public String breath() {
     return "lungs";
   }
 
+  @Override
   public String reproduce() {
     return "eggs";
+  }
+
+  @Override
+  public String toString() {
+    return "\nBird" + "Name: " + name + "\'" + ", Year Named: " + year;
   }
 }
