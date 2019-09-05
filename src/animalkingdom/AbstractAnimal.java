@@ -8,16 +8,6 @@ public abstract class AbstractAnimal {
   String name;
   int year;
 
-  // All animals consume food the same way
-
-  // Each animal is assigned a unique number, a name, and year discovered
-  // regardless of classification.
-
-  // Methods will return a string saying how that animal implements the action
-
-  // All animals can move, breath, reproduce. How they do that, so what string
-  // should get returned when the method is executed, varies by animal type.
-
   public AbstractAnimal(String name, int year) {
     maxId++;
     id = maxId;
