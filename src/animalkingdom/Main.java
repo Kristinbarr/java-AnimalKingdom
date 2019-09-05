@@ -12,6 +12,7 @@ public class Main {
       if (tester.test(a)) {
         System.out.println(
             "Name: " + a.getName() +
+            ", species: " + a.getClass().getSimpleName() +
             ", named in: " + a.getYear() +
             ", movement: " + a.move() +
             ", breaths with: " + a.breath() +
@@ -110,6 +111,11 @@ public class Main {
     System.out.println("___ Only Animals alphabetically and named in 1758 ___");
     animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
     printAnimals(animalList, (a -> a.getYear() == 1758));
+    System.out.println();
+
+    System.out.println("___ STRETCH: Only Animals that are mammals alphabetically ___");
+    animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    printAnimals(animalList, (a -> a instanceof Mammal));
     System.out.println();
 
   }
